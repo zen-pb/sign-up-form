@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/utils.css">
-    <link rel="stylesheet" href="./assets/styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/utils.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
     <title>Sign-up Form</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img src="./assets/images/odin-lined.png" alt="Odin Logo" />
+        <h1>ODIN</h1>
+        Photo by
+        <a
+          href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Halie West</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </div>
+    </header>
+    <main>
+      <p>
+        This is not a real online service! You know you need something like this
+        in your life to help yo realize your deepest dreams. Sign up
+        <em>now</em> to get started
+      </p>
+      <p>You <em>know</em> you want to.</p>
+
+      <form id="sign-upForm" action="#" method="post">
+        <p>Let's do this!</p>
+
+        <label for="f-name">FIRST NAME</label>
+        <input type="text" id="f-name" name="f-name" required />
+
+        <label for="l-name">LAST NAME</label>
+        <input type="text" id="l-name" name="l-name" required />
+
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="tel-number">PHONE NUMBER</label>
+        <input type="tel" id="tel-number" name="tel-number" required />
+
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">CONFIRM PASSWORD</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+      </form>
+
+      <button type="submit" form="sign-upForm">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </main>
+  </body>
 </html>
