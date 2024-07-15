@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    min-width: 30vw;
+    background-image: url("../images/green\ leaf\ plant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+header .logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000075;
+    margin-top: 20vh;
+    padding: 1rem;
+    font-family: "Norse Bold";
+    font-size: 40px;
+}
+header p {
+    padding: 1rem;
+}
+
+header p a {
+    color: inherit;
+}
