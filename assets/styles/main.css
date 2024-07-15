@@ -8,7 +8,7 @@ header {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    min-width: 30vw;
+    min-width: 40vw;
     background-image: url("../images/green\ leaf\ plant.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -32,4 +32,95 @@ header p {
 
 header p a {
     color: inherit;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #F9FAFB;
+}
+
+main .hero {
+    max-inline-size: 66ch;
+    line-height: 1.65;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3rem;
+    margin: 10vh 0 2vh 0;
+}
+
+main form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #FFFFFF;
+    padding: 2rem 3rem;
+    box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.2);
+}
+
+main form p {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+
+main form .form-input {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+main form .form-input label {
+    font-size: 14px;
+}
+
+main form .form-input input {
+    padding: 3px;
+    max-width: 17rem;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+main form .form-input input:focus {
+    outline: 1px solid #1d4ed8;
+    box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.2);
+}
+
+main form .form-input input:invalid{
+    outline: 1px solid #d81d1d;
+}
+
+main form .form-input input[type="password"]:invalid + span::after{
+    content: "" attr(data-help) "";
+    color: #d81d1d;
+    font-size: 12px;
+}
+
+
+main .user-action {
+    padding: 1.5rem 3rem;
+}
+
+main .user-action button {
+    padding: 1rem;
+    width: 12vw;
+    background-color: #596D48;
+    color: #FFFFFF;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+
+main .user-action button:hover {
+    cursor: pointer;
+    background-color: #3f4d33;
+}
+
+main .user-action p a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bolder;
 }
