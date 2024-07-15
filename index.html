@@ -44,28 +44,36 @@
       <form id="sign-upForm" action="#" method="post">
         <p>Let's do this!</p>
 
-        <label for="f-name">FIRST NAME</label>
-        <input type="text" id="f-name" name="f-name" required />
-
-        <label for="l-name">LAST NAME</label>
-        <input type="text" id="l-name" name="l-name" required />
-
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="tel-number">PHONE NUMBER</label>
-        <input type="tel" id="tel-number" name="tel-number" required />
-
-        <label for="password">PASSWORD</label>
-        <input type="password" id="password" name="password" required />
-
-        <label for="confirm-password">CONFIRM PASSWORD</label>
-        <input
-          type="password"
-          id="confirm-password"
-          name="confirm-password"
-          required
-        />
+        <div class="form-input">
+          <label for="f-name">FIRST NAME</label>
+          <input type="text" id="f-name" name="f-name" placeholder="John" required />
+        </div>
+        <div class="form-input">
+          <label for="l-name">LAST NAME</label>
+          <input type="text" id="l-name" name="l-name" placeholder="Smith" required />
+        </div>
+        <div class="form-input">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" placeholder="JohnSmith@email.com" required />
+        </div>
+        <div class="form-input">
+          <label for="tel-number">PHONE NUMBER</label>
+          <input type="tel" id="tel-number" name="tel-number" pattern="^\d{4}-\d{3}-\d{4}$" placeholder="0923-456-7890" required />
+        </div>
+        <div class="form-input">
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" required />
+          <span data-help="*Passwords do not match"></span>
+        </div>
+        <div class="form-input">
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
       </form>
 
       <div class="user-action">
